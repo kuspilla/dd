@@ -1,0 +1,62 @@
+package hashing;
+import java.util.*;
+public class Hassh_Introduction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+   /*
+HashSet <Integer> set = new HashSet<>();
+// add elements 
+set.add(1);
+set.add(2);
+set.add(3);
+set.add(4);
+set.add(5);
+set.add(6);
+set.add(7);
+set.add(8);
+set.add(9);
+set.add(0);
+// automatically sorted 
+//duplicate values not allowed
+//null values allowed
+System.out.println(set);
+
+// remove elements;
+set.remove(6);
+set.remove(7);
+set.remove(8);
+set.remove(9);
+System.out.println(set);
+
+// size of set
+System.out.println("set size "+set.size());
+// set is empty or not return true or false
+System.out.println("set empty "+ set.isEmpty());
+
+// Iterate foreach loop
+
+ for( Integer i : set) {
+	 System.out.print(i+" ");
+ }
+ System.out.println();
+// Iterate using Iterator
+ 
+  Iterator it = set.iterator();
+ while( it.hasNext()) {
+	  System.out.print(it.next() + " ");
+  }
+                                                                 */
+int n =sc.nextInt();
+Integer arr[] =new Integer[n];
+for(int i=0;i<n;i++) {
+	arr[i]=sc.nextInt();
+}
+//        Integer Array to HashSet convert
+   HashSet <Integer> set1 = new HashSet<>(Arrays.asList(arr));
+   
+   System.out.println(set1);
+	}
+
+}
