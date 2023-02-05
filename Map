@@ -1,0 +1,65 @@
+package hashing;
+import java.util.*;
+public class Practice_HashSet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner   sc = new Scanner(System.in);
+
+	        int n = sc.nextInt();
+	        int arr[] = new int[n];
+	        for(int i=0; i<n; i++){
+	            arr[i]= sc.nextInt();
+	        }
+
+	        int m = sc.nextInt();
+	        int brr[] = new int[m];
+	        for(int i=0; i<m; i++){
+	            brr[i]= sc.nextInt();
+	        }
+
+	        Solution Obj = new Solution();
+	        Obj.missingNumbers(n,arr,m,brr);
+	    }
+	}
+	
+
+
+
+
+
+class Solution {
+    static void missingNumbers(int n, int arr[], int m, int brr[]) {
+        //Write your code here
+    	
+    	HashMap<Integer,Integer> map = new HashMap<>();
+    	
+  	ArrayList<Integer> ll = new ArrayList<>();
+  	for( Integer i : brr) {
+  	
+  	map.put( i, map.getOrDefault(i, 0)+1);	
+  	}
+  	
+  	for( Integer i : arr) {
+  		if(map.containsKey(i)) {
+  			map.put( i,map.get((i)-1) );
+  		}
+  		
+  	}
+  	
+  	
+  
+  	
+  	
+  	if(ll.size() == 0) {
+  		System.out.println("-1");
+  	}
+  	else
+  		Collections.sort(ll);
+  	for( Integer i : ll) {
+  		System.out.println(i+" ");
+  	}
+
+    }
+
+}
