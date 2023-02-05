@@ -1,0 +1,86 @@
+package hashing;
+import java.util.*;
+import java.util.Collection;
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  Scanner sc= new Scanner(System.in);
+     
+  // creation HashMap
+     HashMap <Integer,String> map = new HashMap<>();
+     
+     // add elements using put or get
+     map.put(1, "Student1");
+     map.put(2, "student2");
+    // print HashMap
+     
+     System.out.println( map.toString());
+  // get element
+     System.out.println(map.get(1));
+     
+     // remove element
+      map.remove(1);
+  System.out.println(map);
+  
+  // replace
+  map.put(1,"student1");
+  map.replace(1, "mama");
+  System.out.println(map);
+  
+  // size map empty or not
+  System.out.println("map size "+map.size());
+  System.out.println("Map is empty "+ map.isEmpty());
+  
+   // search element  look up
+    System.out.println("value praset " + map.containsKey(1) );
+    
+    // get or default or Given element present or not 
+  
+     System.out.println(map.getOrDefault(10, "Value not present Map"));
+     
+     // Iterate Map
+     for ( Integer key : map.keySet()) {
+    	 System.out.print("Iterate: "+map.get(key)+" ");
+    	 
+     }
+     HashMap <Integer, Integer> aa =new HashMap<>();
+     aa.put(1, 1);
+     aa.put(2, 1);
+//     for(  aa.Entry < Integer,Integer> hh : aa.hhSet()) {
+//    	 
+//     }
+     // print only values
+     
+     System.out.println();
+     for ( String v : map.values()) {
+    	 System.out.print("value "+v+" ");
+     }
+     System.out.println();
+     // only key print
+     for( Integer v : aa.keySet()) {
+    	 System.out.print("key " +v+" ");
+     }
+     
+     
+     // https://course.acciojob.com/idle?question=4ba002e3-51e3-4770-abdf-94f04d3aef69
+     // frequent word in array
+//     String str = sc.nextLine();
+//     HashMap <String,Integer> map1 = new HashMap<>();
+//     int max = 0;
+//     String arr[] = str.split(" ");
+//    
+//     String ans = "";
+//    for( String s : arr) {
+//    	int count = map1.getOrDefault(s , 0)+1;
+//    	if( count >= max) {
+//    		max = count;
+//    		ans =s;
+//    	}
+//    	map1.put(s, count);
+//    }
+//    System.out.println(ans);
+	}
+	 
+
+}
