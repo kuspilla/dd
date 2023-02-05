@@ -1,0 +1,39 @@
+package practice;
+import java.util.*;
+public class L1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      
+		 // advantages
+		// Maintain proper Structure
+		// decrease time
+	/*
+		data structure 2
+		1.Non leaner
+		2.leaner data Structure
+		
+		Linear DS
+		
+		1. Array
+		2. Stack
+		3. Queue
+		4 .LinkedList
+		5.Single LinkedList
+		6. Double LinkedList
+	    	
+		Non Linear 
+		1.Trees - Binary Search
+		2.Graph
+		3.Heap
+		
+		Linear hashing (LH) is a dynamic data structure which implements a hash table and grows or 
+		shrinks one bucket at a time. It was invented by Witold Litwin in 1980.
+		 It has been analyzed by Baeza-Yates and Soza-Pollman.
+	
+		
+		
+		*/
+	}
+
+}
